@@ -29,10 +29,11 @@ public class BBAlgorithm extends Configured implements Tool {
     private static final Integer A_COL = 10000;
     private static final Integer B_ROW = 10000;
     private static final Integer B_COL = 10000;
-    private static final Integer P_ROW = 4; // 4 4 9 5
-    private static final Integer P_MID = 2; // 2 3 3 5
-    private static final Integer P_COL = 2; // 2 3 3 4
+    private static final Integer P_ROW = 5; // 4 4 9 5
+    private static final Integer P_MID = 5; // 2 3 3 5
+    private static final Integer P_COL = 4; // 2 3 3 4
 
+    // Get (row, col) coordinates for each of the blocks
     private static Pair<Integer, Integer> getBlockCoordinates(SparseEncoding data) {
         int i, j;
         if (data.getSrc() == 'A') {
@@ -66,6 +67,7 @@ public class BBAlgorithm extends Configured implements Tool {
             }
         }
 
+        // Need this to send blocks of Matrix A to the respective processors
         private List<Integer> alignBlocksForA(Pair<Integer, Integer> blockCoordinates) {
             List<Integer> partitions = new ArrayList<>();
             int base = (blockCoordinates.getKey() * P_COL) + ((P_ROW * P_COL) * blockCoordinates.getValue());
@@ -75,6 +77,7 @@ public class BBAlgorithm extends Configured implements Tool {
             return partitions;
         }
 
+        // Need this to send blocks of Matrix B to the respective processors
         private List<Integer> alignBlocksForB(Pair<Integer, Integer> blockCoordinates) {
             List<Integer> partitions = new ArrayList<>();
             int base = (P_ROW * P_COL * blockCoordinates.getKey()) + blockCoordinates.getValue();

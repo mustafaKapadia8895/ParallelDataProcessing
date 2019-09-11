@@ -12,7 +12,11 @@ public class CannonKey implements WritableComparable<CannonKey> {
     private Integer partitionRow;
     private Integer partitionCol;
 
-    public CannonKey() {
+    public CannonKey() { }
+
+    public CannonKey(Pair<Integer, Integer> key) {
+        partitionRow = key.getKey();
+        partitionCol = key.getValue();
     }
 
     public CannonKey(Integer partitionRow, Integer partitionCol) {
@@ -20,9 +24,13 @@ public class CannonKey implements WritableComparable<CannonKey> {
         this.partitionCol = partitionCol;
     }
 
-    @Override // TODO: think of secondary sort optimization
-    public int compareTo(CannonKey o) {
-        return 0;
+    @Override
+    public int compareTo(CannonKey that) {
+        int cmp = Integer.compare(this.partitionRow, that.partitionRow);
+        if (cmp == 0) {
+            return Integer.compare(this.partitionCol, that.partitionCol);
+        }
+        return cmp;
     }
 
     @Override

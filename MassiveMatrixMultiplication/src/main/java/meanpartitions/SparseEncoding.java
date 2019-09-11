@@ -28,12 +28,6 @@ public class SparseEncoding implements WritableComparable<SparseEncoding>{
         src = values[3].charAt(0);
     }
 
-    public SparseEncoding(Integer row, Integer col, Integer val) {
-        this.row = row;
-        this.col = col;
-        this.val = val;
-    }
-
     public SparseEncoding(Integer row, Integer col, Integer val, Character src) {
         this.row = row;
         this.col = col;
@@ -46,6 +40,12 @@ public class SparseEncoding implements WritableComparable<SparseEncoding>{
         this.col = s.col;
         this.val = s.val;
         this.src = s.src;
+    }
+
+    public SparseEncoding(Integer row, Integer col, Integer val) {
+        this.row = row;
+        this.col = col;
+        this.val = val;
     }
 
     @Override

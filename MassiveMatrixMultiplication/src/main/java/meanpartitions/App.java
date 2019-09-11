@@ -19,7 +19,11 @@ public class App
         }
 
         try {
+            // To run Simple BB uncomment below
             ToolRunner.run(new BBAlgorithm(), args);
+
+            // To run Cannon uncomment below
+            // ToolRunner.run(new CannonAlgorithm(), args);
         } catch (final Exception e) {
             logger.error("", e);
         }
