@@ -55,3 +55,5 @@ All of the build & execution commands are organized in the Makefile.
 	make upload-input-aws		-- only before first execution
 	make aws					-- check for successful execution with web interface (aws.amazon.com)
 	download-output-aws			-- after successful execution & termination
+	
+## Refer to the report for algorithm specific details and findings from analysis
