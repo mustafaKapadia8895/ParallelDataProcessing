@@ -4,10 +4,10 @@ Fall 2018 Project
 
 Code author
 -----------
-Siddhant Benadikar,
-Sarthak Kothari,
+Mustafa Kapadia,
 Sahil Gandhi,
-Mustafa Kapadia.
+Sarthak Kothari,
+Siddhant Benadikar.
 
 Installation
 ------------
