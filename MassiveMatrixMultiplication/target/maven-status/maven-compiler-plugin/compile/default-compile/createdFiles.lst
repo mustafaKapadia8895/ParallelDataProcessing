@@ -1,0 +1,15 @@
+meanpartitions/BBAlgorithm$MultiplicationMapper.class
+meanpartitions/CannonAlgorithm.class
+meanpartitions/BBAlgorithm$AggregationMapper.class
+meanpartitions/BBAlgorithm$AggregationReducer.class
+meanpartitions/App.class
+meanpartitions/SimpleKey.class
+meanpartitions/CannonAlgorithm$CannonKeyPartitioner.class
+meanpartitions/BBAlgorithm.class
+meanpartitions/CannonKey.class
+meanpartitions/CannonAlgorithm$CannonReducer.class
+meanpartitions/CannonAlgorithm$CannonSecondIterMapper.class
+meanpartitions/Pair.class
+meanpartitions/SparseEncoding.class
+meanpartitions/BBAlgorithm$MultiplicationReducer.class
+meanpartitions/CannonAlgorithm$CannonFirstIterMapper.class
