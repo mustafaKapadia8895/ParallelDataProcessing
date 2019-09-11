@@ -1,0 +1,5 @@
+{"nodeId":1,"adjList":[2],"isObj":false,"isActive":false,"kMap":{}}
+{"nodeId":2,"adjList":[3],"isObj":false,"isActive":false,"kMap":{}}
+{"nodeId":3,"adjList":[4],"isObj":false,"isActive":false,"kMap":{}}
+{"nodeId":4,"adjList":[],"isObj":false,"isActive":false,"kMap":{}}
+{"nodeId":5,"adjList":[1],"isObj":false,"isActive":false,"kMap":{}}
