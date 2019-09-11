@@ -1,6 +1,6 @@
 # ParallelDataProcessing
 
-This repository contains solutions for different Big Data computatationally challenging problems implemented in both, MapReduce and Spark. These were run on AWS clusters of different sizes in order to optimize the performances and data transfered between machines in the cluster. The general set up and execution instructions are the same for all of them.
+This repository contains solutions for different Big Data computatationally challenging problems implemented in both, MapReduce and Spark. These were run on AWS clusters of different sizes in order to optimize the performances and data transfered between machines in the cluster. The general set up and execution instructions are the same for all of them. Each of the projects contains a report of the findings.
 
 ## Download instructions
 
